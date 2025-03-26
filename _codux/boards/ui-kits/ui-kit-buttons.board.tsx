@@ -2,12 +2,6 @@ import { NavLink } from '@remix-run/react';
 import { createBoard, Variant } from '@wixc3/react-board';
 import classNames from 'classnames';
 import ComponentWrapper from '~/_codux/board-wrappers/component-wrapper';
-import discordIcon from '~/src/assets/svg/discord.svg';
-import facebookIcon from '~/src/assets/svg/facebook.svg';
-import githubIcon from '~/src/assets/svg/github.svg';
-import mediumIcon from '~/src/assets/svg/medium.svg';
-import twitterxIcon from '~/src/assets/svg/twitterx.svg';
-import youtubeIcon from '~/src/assets/svg/youtube.svg';
 import styles from '~/src/styles/ui-kit-buttons.module.scss';
 
 export default createBoard({
@@ -51,42 +45,8 @@ export default createBoard({
                         </NavLink>
                     </div>
                 </Variant>
-                <hr className={styles.hrLight} />
-                <h4 className={styles.sectionHeader}>SOCIAL</h4>
-                <Variant name="Social Media Row">
-                    <div className={classNames(styles.iconsContainer, styles.menu)}>
-                        <Variant name="X Icon">
-                            <a href="/">
-                                <img className={styles.icon} src={twitterxIcon} alt="twitter" />
-                            </a>
-                        </Variant>
-                        <Variant name="Facebook Icon">
-                            <a href="/about">
-                                <img className={styles.icon} src={facebookIcon} alt="facebook" />
-                            </a>
-                        </Variant>
-                        <Variant name="Discord Icon">
-                            <a href="/">
-                                <img className={styles.icon} src={discordIcon} alt="discord" />
-                            </a>
-                        </Variant>
-                        <Variant name="Youtube Icon">
-                            <a href="/">
-                                <img className={styles.icon} src={youtubeIcon} alt="youtube" />
-                            </a>
-                        </Variant>
-                        <Variant name="Medium Icon">
-                            <a href="/">
-                                <img className={styles.icon} src={mediumIcon} alt="medium" />
-                            </a>
-                        </Variant>
-                        <Variant name="Github Icon">
-                            <a href="/">
-                                <img className={styles.icon} src={githubIcon} alt="github" />
-                            </a>
-                        </Variant>
-                    </div>
-                </Variant>
+                <h4 className={styles.sectionHeader}></h4>
+                <Variant name="Social Media Row"></Variant>
             </div>
         </ComponentWrapper>
     ),
