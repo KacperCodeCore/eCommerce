@@ -1,0 +1,47 @@
+@use '@styles/typography.scss';
+
+.root {
+    display: flex;
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    box-shadow: 0 -1px rgba(40, 43, 45, 0.25);
+}
+
+.outOfStock {
+    color: var(--grey);
+}
+
+.image {
+    width: 100px;
+    height: 100px;
+}
+
+.infoContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 4px;
+    flex-grow: 1;
+}
+
+.description {
+    text-align: left;
+    font: var(--paragraph2);
+}
+
+.removeButton {
+    cursor: pointer;
+    margin-left: 6px;
+    color: var(--black);
+}
+
+.actionsContainer {
+    display: flex;
+}
+
+.itemLine {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}

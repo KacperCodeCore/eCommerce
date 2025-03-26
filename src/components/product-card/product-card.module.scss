@@ -1,0 +1,44 @@
+@use '@styles/variables.scss' as *;
+
+.root {
+    cursor: pointer;
+}
+
+.cardContent {
+    padding: 16px 22px;
+    font-size: 24px;
+}
+
+.image {
+    object-position: 50% 50%;
+    aspect-ratio: 4/3;
+    width: 100%;
+    object-fit: cover;
+}
+
+.description {
+    text-align: left;
+    font: var(--paragraph1);
+}
+
+.outOfStock {
+    color: var(--grey);
+}
+
+.outOfStockMessage {
+    font: var(--extra-small-text);
+}
+
+// --- MEDIA QUERIES ---
+
+@media ($mobile-width <= width < $tablet-width) {
+    .cardContent {
+        font-size: 24px;
+    }
+}
+
+@media (width < 430px) {
+    .cardContent {
+        font-size: 24px;
+    }
+}

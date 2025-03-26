@@ -1,0 +1,108 @@
+@use '@styles/variables.scss' as *;
+
+.root {
+    display: flex;
+    gap: 100px;
+    padding-top: 50px;
+    padding-bottom: 60px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.sidebar {
+    padding-top: 30px;
+    padding-left: 50px;
+}
+
+.sidebarSection {
+    width: 150px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sidebarTitle {
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    border-bottom: solid 1px var(--grey);
+    font: var(--heading6);
+    font-weight: 400;
+}
+
+.products {
+    flex: 1;
+}
+
+.title {
+    font: var(--large-paragraph);
+    text-align: center;
+}
+
+.appliedFilters {
+    margin-bottom: 16px;
+}
+
+.countAndSorting {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.productsCount {
+    font: var(--paragraph3);
+}
+
+.gallery {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 60px;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.productCard {
+    width: 100%;
+    height: 100%;
+}
+
+.categoryList {
+    list-style: none;
+    padding: 0;
+}
+
+.categoryItem {
+    height: 42px;
+}
+
+.activeCategory {
+    font-weight: bold;
+}
+
+@media (width > $desktop-width) {
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media (width < $tablet-width) {
+    .sidebar {
+        display: none;
+    }
+}
+
+@media ($mobile-width <= width < $tablet-width) {
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (width < $mobile-width) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}

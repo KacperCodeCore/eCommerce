@@ -1,0 +1,14 @@
+.root {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    /* create a stacking context for the app */
+    isolation: isolate;
+}
+
+.content {
+    flex-grow: 1;
+    background: var(--snow-white);
+}
